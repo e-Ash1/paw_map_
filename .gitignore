@@ -2,6 +2,14 @@
 
 # dependencies
 /node_modules
+/client/node_modules/
+/server/node_modules/
+
+# ignore React/Vite caches, bundler caches, etc.
+.cache/
+/client/.cache/
+/server/.cache/
+
 /.pnp
 .pnp.js
 
@@ -13,8 +21,8 @@
 
 # misc
 .DS_Store
-/client/.env
-/server/.env
+**/.env
+**/.env.*
 .env.local
 .env.development.local
 .env.test.local
